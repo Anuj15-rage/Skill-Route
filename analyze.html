@@ -4,51 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Analyze Your Resume | SkillRoute</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
-    <a class="brand" href="index.html">SkillRoute</a>
-    <p>Resume-Based Career and Resource Recommendation System</p>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="analyze.html">Analyze Resume</a>
-      <a href="dashboard.html">Dashboard</a>
-      <a href="resources.html">Resources</a>
-      <a href="index.html#about">About</a>
-    </nav>
-  </header>
-  <main class="container">
-    <section class="section">
-      <h1>Analyze Your Resume</h1>
-      <p>Upload your resume and provide a target Job Description to evaluate your career readiness.</p>
-      <form class="job-form" action="#" method="post" enctype="multipart/form-data">
-        <fieldset class="upload-box">
-          <legend>Upload Resume</legend>
-          <p>PDF or DOCX format</p>
-          <label for="resume">Choose your resume</label>
-          <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
-        </fieldset>
-        <fieldset>
-          <legend>Target Job</legend>
-          <label for="job-title">Job Title</label>
-          <input type="text" id="job-title" name="job-title" placeholder="Backend Developer">
-          <label for="company">Company <span>(optional)</span></label>
-          <input type="text" id="company" name="company" placeholder="Company name">
-          <label for="job-description">Job Description</label>
-          <textarea id="job-description" name="job-description" rows="12" placeholder="Paste the complete Job Description here"></textarea>
-        </fieldset>
-        <button type="submit">Analyze Resume</button>
-      </form>
-      <aside class="card">
-        <h2>What Will Be Analyzed?</h2>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">SkillRoute</a>
+      <nav aria-label="Main navigation">
         <ul>
-          <li>Skills</li><li>Education</li><li>Projects</li><li>Experience</li><li>Keywords</li><li>Resume Structure</li>
+          <li><a class="sidebar-link" href="dashboard.html">Dashboard</a></li>
+          <li><a class="sidebar-link active" href="analyze.html" aria-current="page">Analyze Resume</a></li>
+          <li><a class="sidebar-link" href="dashboard.html#job-match">Job Match</a></li>
+          <li><a class="sidebar-link" href="dashboard.html#skill-gap">Skill Gap</a></li>
+          <li><a class="sidebar-link" href="dashboard.html#career-recommendations">Career Recommendations</a></li>
+          <li><a class="sidebar-link" href="dashboard.html#learning-recommendations">Learning Recommendations</a></li>
+          <li><a class="sidebar-link" href="resources.html">Resources</a></li>
+          <li><a class="sidebar-link" href="dashboard.html#certifications">Certifications</a></li>
+          <li><a class="sidebar-link" href="dashboard.html#resume-improvement">Resume Improvement</a></li>
         </ul>
-        <p>The provided Job Description will be used for Resume-to-Job Matching and Skill Gap Analysis.</p>
-      </aside>
-    </section>
-  </main>
-  <footer class="footer"><p>SkillRoute</p></footer>
+      </nav>
+      <nav class="sidebar-footer" aria-label="Account navigation">
+        <ul>
+          <li><a class="sidebar-link" href="#settings">Settings</a></li>
+          <li><a class="sidebar-link" href="index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="dashboard-content">
+      <header class="header">
+        <h1>Analyze Resume</h1>
+        <div class="profile"><span>Student Name</span><button type="button" aria-label="Open profile menu">Profile</button></div>
+      </header>
+      <main class="container">
+        <section class="section">
+          <h2>Analyze Your Resume</h2>
+          <p>Upload your resume and provide a target Job Description to evaluate your career readiness.</p>
+          <form class="job-form" action="#" method="post" enctype="multipart/form-data">
+            <fieldset class="upload-box">
+              <legend>Upload Resume</legend>
+              <p>PDF or DOCX format</p>
+              <label for="resume">Choose your resume</label>
+              <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+            </fieldset>
+            <fieldset>
+              <legend>Target Job</legend>
+              <label for="job-title">Job Title</label>
+              <input type="text" id="job-title" name="job-title" placeholder="Backend Developer">
+              <label for="company">Company <span>(optional)</span></label>
+              <input type="text" id="company" name="company" placeholder="Company name">
+              <label for="job-description">Job Description</label>
+              <textarea id="job-description" name="job-description" rows="12" placeholder="Paste the complete Job Description here"></textarea>
+            </fieldset>
+            <button type="submit">Analyze Resume</button>
+          </form>
+          <aside class="card">
+            <h2>What Will Be Analyzed?</h2>
+            <ul>
+              <li>Skills</li><li>Education</li><li>Projects</li><li>Experience</li><li>Keywords</li><li>Resume Structure</li>
+            </ul>
+            <p>The provided Job Description will be used for Resume-to-Job Matching and Skill Gap Analysis.</p>
+          </aside>
+        </section>
+      </main>
+      <footer class="footer"><p>SkillRoute</p></footer>
+    </div>
+  </div>
 </body>
 </html>
