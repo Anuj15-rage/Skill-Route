@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Dashboard | SkillRoute</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">SkillRoute</a>
+      <nav aria-label="Dashboard navigation">
+        <ul>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="analyze.html">Analyze Resume</a></li>
+          <li><a href="#job-match">Job Match</a></li>
+          <li><a href="#skill-gap">Skill Gap</a></li>
+          <li><a href="#career-recommendations">Career Recommendations</a></li>
+          <li><a href="#learning-recommendations">Learning Recommendations</a></li>
+          <li><a href="#resource-recommendations">Resources</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#resume-improvement">Resume Improvement</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="dashboard-content">
+      <header class="header">
+        <h1>Career Dashboard</h1>
+        <div class="profile"><span>Student Name</span><button type="button" aria-label="Open profile menu">Profile</button></div>
+      </header>
+      <main id="dashboard" class="container">
+        <p>Your resume and career analysis for the selected Job Role.</p>
+        <section class="section" aria-label="Selected job and resume">
+          <p><strong>Target Role:</strong> Backend Developer</p>
+          <p><strong>Resume:</strong> Anuj_Resume.pdf</p>
+        </section>
+
+        <section id="job-match" class="section">
+          <h2>Analysis Summary</h2>
+          <div class="card-list">
+            <article class="score-card"><h3>Resume Compatibility</h3><p>78 / 100</p></article>
+            <article class="score-card"><h3>Matching Skills</h3><p>8</p></article>
+            <article class="score-card"><h3>Missing Skills</h3><p>3</p></article>
+            <article class="score-card"><h3>Recommended Roles</h3><p>3</p></article>
+          </div>
+          <p>These are sample frontend values.</p>
+        </section>
+
+        <section class="section" aria-labelledby="score-heading">
+          <h2 id="score-heading">Resume Compatibility Score</h2>
+          <p><strong>78 / 100</strong></p>
+          <p>A project-defined measure of how closely the resume aligns with the selected Job Description.</p>
+          <p>This is not a corporate ATS score.</p>
+          <h3>Score Breakdown</h3>
+          <ul>
+            <li>Required Skill Match — 24 / 30</li>
+            <li>Keyword Match — 12 / 15</li>
+            <li>Project Relevance — 11 / 15</li>
+            <li>Education Relevance — 9 / 10</li>
+            <li>Experience Relevance — 7 / 15</li>
+            <li>Resume Completeness — 10 / 15</li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="matching-heading">
+          <h2 id="matching-heading">Matching Skills</h2>
+          <ul class="skill-list"><li>Python</li><li>SQL</li><li>Git</li><li>MySQL</li><li>HTML</li><li>CSS</li></ul>
+        </section>
+
+        <section class="section" aria-labelledby="missing-heading">
+          <h2 id="missing-heading">Missing Skills</h2>
+          <div class="card-list">
+            <article class="skill-card"><h3>REST APIs</h3><p>Priority: High</p></article>
+            <article class="skill-card"><h3>Docker</h3><p>Priority: Medium</p></article>
+            <article class="skill-card"><h3>FastAPI</h3><p>Priority: Medium</p></article>
+          </div>
+        </section>
+
+        <section id="skill-gap" class="section">
+          <h2>Skill Gap Analysis</h2>
+          <p>The system compares current student skills with the requirements in the target Job Description.</p>
+          <div class="card-list">
+            <article class="skill-card"><h3>REST APIs</h3><p>High Priority</p><p>Required for the target role but not sufficiently represented in the resume.</p></article>
+            <article class="skill-card"><h3>Docker</h3><p>Medium Priority</p><p>Deployment and containerization knowledge can support the target role.</p></article>
+            <article class="skill-card"><h3>FastAPI</h3><p>Medium Priority</p><p>Backend API development experience can support the target role.</p></article>
+          </div>
+        </section>
+
+        <section id="career-recommendations" class="section">
+          <h2>Career Recommendations</h2>
+          <div class="card-list">
+            <article class="job-card"><h3>Backend Developer</h3><p>82% Match</p><p>Relevant skills: Python, SQL, MySQL</p><button type="button">View Details</button></article>
+            <article class="job-card"><h3>Python Developer</h3><p>78% Match</p><p>Relevant skills: Python, SQL, Git</p><button type="button">View Details</button></article>
+            <article class="job-card"><h3>Full Stack Developer</h3><p>71% Match</p><p>Relevant skills: HTML, CSS, Python</p><button type="button">View Details</button></article>
+          </div>
+        </section>
+
+        <section id="learning-recommendations" class="section">
+          <h2>Learning Recommendations</h2>
+          <p>This section answers: “What should the student learn?”</p>
+          <div class="card-list">
+            <article class="card"><h3>REST APIs</h3><ul><li>HTTP fundamentals</li><li>REST architecture</li><li>API development</li></ul></article>
+            <article class="card"><h3>Docker</h3><ul><li>Containers</li><li>Images</li><li>Volumes</li><li>Deployment</li></ul></article>
+            <article class="card"><h3>FastAPI</h3><ul><li>Routing</li><li>Validation</li><li>API development</li><li>Backend integration</li></ul></article>
+          </div>
+        </section>
+
+        <section id="resource-recommendations" class="section">
+          <h2>Resource Recommendations</h2>
+          <p>This section answers: “Where/how should the student learn it?”</p>
+          <div class="card-list">
+            <article class="resource-card"><h3>REST API Fundamentals</h3><p>Type: Course</p><p>Provider: Coursera</p><p>Level: Beginner</p><p>Introduction to HTTP methods and REST API concepts.</p><a href="#">View Resource</a></article>
+            <article class="resource-card"><h3>REST API Documentation</h3><p>Type: Documentation</p><p>Provider: Official</p><p>Level: All Levels</p><p>Reference material for learning REST API concepts.</p><a href="#">View Resource</a></article>
+            <article class="resource-card"><h3>API Development Project</h3><p>Type: Practice Project</p><p>Provider: Example</p><p>Level: Intermediate</p><p>Practice building and documenting a small API.</p><a href="#">View Resource</a></article>
+          </div>
+          <a href="resources.html">Browse All Resources</a>
+        </section>
+
+        <section id="certifications" class="section">
+          <h2>Certification Recommendations</h2>
+          <article class="resource-card">
+            <h3>Azure Fundamentals</h3>
+            <p>Provider: Microsoft</p>
+            <p>Level: Beginner</p>
+            <p>Reason: Relevant to cloud-related requirements of the target role.</p>
+            <p>Sample frontend content only.</p>
+            <a href="#">View Certification</a>
+          </article>
+        </section>
+
+        <section id="resume-improvement" class="section">
+          <h2>Resume Improvement Suggestions</h2>
+          <ul>
+            <li>Strengthen project descriptions</li>
+            <li>Add relevant technical keywords</li>
+            <li>Add measurable project outcomes</li>
+            <li>Improve skill descriptions</li>
+          </ul>
+          <div class="card">
+            <h3>Before</h3>
+            <p>“Developed a student management system.”</p>
+            <h3>Suggested</h3>
+            <p>“Developed a C++ student management system supporting record creation, retrieval, and persistent data handling.”</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Your Next Steps</h2>
+          <ol>
+            <li>Learn REST APIs</li>
+            <li>Practice Docker</li>
+            <li>Build a backend project</li>
+            <li>Improve project descriptions</li>
+            <li>Explore recommended resources</li>
+          </ol>
+          <a href="analyze.html">Re-analyze Resume</a>
+          <button type="button">Download Report</button>
+        </section>
+      </main>
+      <footer class="footer"><p>SkillRoute · Sample analysis content for frontend demonstration</p></footer>
+    </div>
+  </div>
+</body>
+</html>

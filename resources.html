@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resource Recommendations | SkillRoute</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">SkillRoute</a>
+    <p>Resume-Based Career and Resource Recommendation System</p>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="analyze.html">Analyze Resume</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="resources.html">Resources</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="section">
+      <h1>Resource Recommendations</h1>
+      <p>Explore learning resources relevant to your identified Missing Skills and target Job Role.</p>
+      <form class="job-form" action="resources.html" method="get">
+        <fieldset>
+          <legend>Filter Resources</legend>
+          <label for="skill">Skill</label>
+          <input type="search" id="skill" name="skill" placeholder="e.g. Docker">
+          <label for="resource-type">Resource Type</label>
+          <select id="resource-type" name="resource-type">
+            <option value="">All types</option>
+            <option value="course">Course</option>
+            <option value="certification">Certification</option>
+            <option value="documentation">Documentation</option>
+            <option value="learning-path">Learning Path</option>
+            <option value="tutorial">Tutorial</option>
+            <option value="practice-project">Practice Project</option>
+          </select>
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty" name="difficulty">
+            <option value="">All levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+          <label for="provider">Provider</label>
+          <input type="search" id="provider" name="provider" placeholder="Provider name">
+          <button type="submit">Filter Resources</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="section" aria-labelledby="resource-list-heading">
+      <h2 id="resource-list-heading">Learning Resources</h2>
+      <div class="card-list">
+        <article class="resource-card">
+          <h3>Docker Fundamentals</h3>
+          <p>Skill: Docker</p><p>Type: Course</p><p>Level: Beginner</p><p>Provider: Example Provider</p>
+          <p>Sample course entry for learning container basics.</p>
+          <a href="#">View Resource</a>
+        </article>
+        <article class="resource-card">
+          <h3>Docker Documentation</h3>
+          <p>Skill: Docker</p><p>Type: Documentation</p><p>Level: All Levels</p><p>Provider: Official</p>
+          <p>Sample documentation entry for Docker concepts and reference material.</p>
+          <a href="#">View Resource</a>
+        </article>
+        <article class="resource-card">
+          <h3>Backend API Project</h3>
+          <p>Skill: REST APIs</p><p>Type: Practice Project</p><p>Level: Intermediate</p><p>Provider: Example Provider</p>
+          <p>Practice planning, building, and documenting a backend API.</p>
+          <a href="#">View Resource</a>
+        </article>
+        <article class="resource-card">
+          <h3>REST API Fundamentals</h3>
+          <p>Skill: REST APIs</p><p>Type: Tutorial</p><p>Level: Beginner</p><p>Provider: Example Provider</p>
+          <p>Sample tutorial entry covering HTTP methods and REST concepts.</p>
+          <a href="#">View Resource</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="certifications-heading">
+      <h2 id="certifications-heading">Recommended Certifications</h2>
+      <article class="resource-card">
+        <h3>Azure Fundamentals</h3>
+        <p>Provider: Microsoft</p>
+        <p>Level: Beginner</p>
+        <p>Reason: Relevant to cloud-related requirements.</p>
+        <p>Sample frontend content only; certification information should be verified before use.</p>
+        <a href="#">View Certification</a>
+      </article>
+    </section>
+  </main>
+  <footer class="footer"><p>SkillRoute</p></footer>
+</body>
+</html>

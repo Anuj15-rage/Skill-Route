@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analyze Your Resume | SkillRoute</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">SkillRoute</a>
+    <p>Resume-Based Career and Resource Recommendation System</p>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="analyze.html">Analyze Resume</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="resources.html">Resources</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="section">
+      <h1>Analyze Your Resume</h1>
+      <p>Upload your resume and provide a target Job Description to evaluate your career readiness.</p>
+      <form class="job-form" action="#" method="post" enctype="multipart/form-data">
+        <fieldset class="upload-box">
+          <legend>Upload Resume</legend>
+          <p>PDF or DOCX format</p>
+          <label for="resume">Choose your resume</label>
+          <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        </fieldset>
+        <fieldset>
+          <legend>Target Job</legend>
+          <label for="job-title">Job Title</label>
+          <input type="text" id="job-title" name="job-title" placeholder="Backend Developer">
+          <label for="company">Company <span>(optional)</span></label>
+          <input type="text" id="company" name="company" placeholder="Company name">
+          <label for="job-description">Job Description</label>
+          <textarea id="job-description" name="job-description" rows="12" placeholder="Paste the complete Job Description here"></textarea>
+        </fieldset>
+        <button type="submit">Analyze Resume</button>
+      </form>
+      <aside class="card">
+        <h2>What Will Be Analyzed?</h2>
+        <ul>
+          <li>Skills</li><li>Education</li><li>Projects</li><li>Experience</li><li>Keywords</li><li>Resume Structure</li>
+        </ul>
+        <p>The provided Job Description will be used for Resume-to-Job Matching and Skill Gap Analysis.</p>
+      </aside>
+    </section>
+  </main>
+  <footer class="footer"><p>SkillRoute</p></footer>
+</body>
+</html>
